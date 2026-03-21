@@ -10,11 +10,16 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="slide-0">
         <a class="logo" href="#">
           <img class="logo-img" src="./images/logo.svg" alt="logotype" />
         </a>
         <nav class="menu">
+          <button class="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <ul class="menu__list">
             <li class="menu__list-item">
               <a class="menu__list-link" href="#">Equipment</a>
@@ -33,6 +38,29 @@
         >
       </header>
       <main class="main">
+        <div class="social">
+          <p class="social__text">Follow us</p>
+          <a href="#">
+            <img src="./images/instagram.svg" alt="instagram" />
+          </a>
+          <a href="#">
+            <img src="./images/twitter.svg" alt="twitter" />
+          </a>
+        </div>
+        <ul class="site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#slide-0" class="site-list__link">Start</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#slide-1" class="site-list__link">01</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#slide-2" class="site-list__link">02</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#slide-3" class="site-list__link">03</a>
+          </li>
+        </ul>
         <section class="content">
           <div class="content__top">
             <p class="pre-title">A Hiking guide</p>
@@ -43,7 +71,7 @@
             </a>
           </div>
           <ul class="list">
-            <li class="list-item">
+            <li class="list-item" id="slide-1">
               <div class="list__item-box">
                 <p class="pre-title">GEt Started</p>
                 <h2 class="list__item-title">What level of hiker are you?</h2>
@@ -60,7 +88,7 @@
               </div>
               <img class="list__item-img" src="./images/01.png" alt="" />
             </li>
-            <li class="list-item">
+            <li class="list-item" id="slide-2">
               <div class="list__item-box">
                 <p class="pre-title">Hiking Essentials</p>
                 <h2 class="list__item-title">Picking the right Hiking Gear!</h2>
@@ -76,7 +104,7 @@
               </div>
               <img class="list__item-img" src="./images/02.png" alt="" />
             </li>
-            <li class="list-item">
+            <li class="list-item" id="slide-3">
               <div class="list__item-box">
                 <p class="pre-title">where you go is the key</p>
                 <h2 class="list__item-title">Understand Your Map & Timing</h2>
@@ -142,6 +170,6 @@
         </div>
       </footer>
     </div>
-    <script src="js.main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
